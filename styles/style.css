@@ -111,14 +111,17 @@ video {
 }
 
 .search-form__label:hover {
-  cursor: pointer;
-  text-decoration: underline;
   text-underline-offset: 2px;
+  cursor: pointer;
 }
 
 .search-form__label:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 1px;
+}
+
+.search-form__label-text:hover {
+  text-decoration: underline;
 }
 
 .search-form__textfield {
@@ -141,6 +144,10 @@ video {
 .search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
 }
+
+/* .search-form__textfield:hover {
+  text-decoration: none;
+} */
 
 .visually-hidden {
   position: absolute;
@@ -236,8 +243,7 @@ video {
   flex-direction: column;
   gap: 30px;
   height: 298px;
-  overflow: scroll;
-  overflow-x: hidden;
+  overflow: hidden scroll;
 }
 
 .content__list {
