@@ -71,7 +71,8 @@ ol {
 .result__video-container {
   width: 711px;
   height: 386px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
+ 
 }
 
 video {
@@ -87,13 +88,98 @@ video {
   align-items: flex-start;
 }
 
+.search-form__fieldset {
+  border: none;
+}
+
 .search-form__fieldset-title {
   font-weight: 400;
   font-size: 18px;
-  line-height: 1;
+  line-height: 1.75;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  width: fit-content;
+}
+
+/* .search-form__label:has(:focus-visible) {
+  border: none;
+} */
+
+.search-form__textfield {
+  width: 225px;
+  border-top: #fff 1px solid;
+  border-bottom: #fff 1px solid;
+  color: #fff;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  background: transparent;
+  appearance: none;
+}
+
+.search-form__textfield::placeholder {
+  color: rgb(255 255 255 / 0.7);
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.search-form__pseudo-checkbox {
+  width: 19px;
+  height: 19px;
+  border: solid #fff 1px;
+  padding: 1px;
+}
+
+.search-form__pseudo-checkbox::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #fff;
+}
+
+.search-form__checkbox:active {
+  opacity: 1;
+}
+
+.button {
+  height: 34px;
+  border: 1px #fff solid;
+  color: #fff;
+  font-family: Fira Sans Condensed;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  align-self: flex-end;
+}
+
+.more-button {
 }
 
 .content__details {
+  flex: 1;
   width: 100%;
   height: 100%;
 }
@@ -116,8 +202,8 @@ video {
   flex-direction: column;
   gap: 30px;
   height: 298px;
-  /* overflow: hidden; */
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 .content__list {
@@ -157,7 +243,6 @@ video {
   display: -webkit-box;
   overflow: hidden;
   font-family: Fira Sans Condensed;
-  line-height: 1;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
