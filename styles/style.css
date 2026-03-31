@@ -1,6 +1,6 @@
-* {
+/* * {
   box-shadow: inset 0 4px 10px rgba(157, 199, 161, 0.918);
-}
+} */
 
 *,
 *::before,
@@ -72,7 +72,6 @@ ol {
   width: 711px;
   height: 386px;
   margin-bottom: 10px;
- 
 }
 
 video {
@@ -170,12 +169,25 @@ video {
   background-color: transparent;
 }
 
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:focus-visible {
+  outline: 1px #fff double;
+}
+
 .search-form__submit-button {
   width: 194px;
   align-self: flex-end;
 }
 
 .more-button {
+  width: 100%;
 }
 
 .content__details {
