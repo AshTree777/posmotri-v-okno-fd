@@ -123,6 +123,14 @@ video {
   opacity: 1;
 }
 
+/* .search-form__pseudo-checkbox:checked::after {
+  opacity: 1;
+} */
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  opacity: 1;
+}
+
 .search-form__textfield {
   width: 225px;
   border: none;
