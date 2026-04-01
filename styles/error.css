@@ -15,8 +15,3 @@
   text-align: center;
   text-transform: uppercase;
 }
-
-.error,
-.content__list-container {
-  overflow: hidden;
-}

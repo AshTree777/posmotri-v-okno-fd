@@ -1,7 +1,3 @@
-/* * {
-  box-shadow: inset 0 4px 10px rgba(157, 199, 161, 0.918);
-} */
-
 *,
 *::before,
 *::after {
@@ -123,14 +119,6 @@ video {
   opacity: 1;
 }
 
-/* .search-form__pseudo-checkbox:checked::after {
-  opacity: 1;
-} */
-
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-  opacity: 1;
-}
-
 .search-form__textfield {
   width: 225px;
   border: none;
@@ -238,7 +226,7 @@ video {
   gap: 30px;
   height: 298px;
   padding: 2px;
-  overflow: hidden scroll;
+  overflow: auto;
 }
 
 .content__list {
