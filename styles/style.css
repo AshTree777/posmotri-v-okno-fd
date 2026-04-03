@@ -288,7 +288,7 @@ video {
 
 .content__video-card-title {
   overflow: hidden;
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 1.15;
@@ -300,7 +300,7 @@ video {
 .content__video-card-description {
   display: -webkit-box;
   overflow: hidden;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
